@@ -1,13 +1,18 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	line-height: 1.5em;
+}
 *{
 	box-sizing: border-box;
 }
 .cards-container {
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
 }
 .card-wrapper {
 	--img-size: 100px;
-	--main-bg-color: darkblue;
+	--main-bg-color: rgba(23, 163, 184, 1);
 	display: inline-block;
 	min-width: calc(var(--img-size)*2);
 	width: 100%;
@@ -29,14 +34,23 @@
 	border: 1px solid #cccccc;
 	border-radius: 50%;
 	margin-top: calc(var(--img-size)*-0.5);
+	margin-bottom: 10px;
 	object-fit: cover;
 	object-position: top center;
 	background-color: #ffffff;
 }
+.icon-map{
+	height: 15px;
+	margin: 0 -3px 5px 0;
+}
+.sppercase {
+	text-transform: uppercase;
+}
 .btn-conteiner {
+	padding: 10px 0px;
+	margin-top: 10px;
 	border-top: 1px solid #cccccc;
 	border-bottom: 1px solid #cccccc;
-	padding: 15px 0px;
 }
 .btn {
 	cursor: pointer;
@@ -46,7 +60,14 @@
 	/* font-family: inherit; */
 }
 .follow {
-	background-color: green;
+	background-color: rgba(37, 168, 68, 1);
+}
+.send_message {
+	background-color: var(--main-bg-color)
+}
+.description-profile {
+	padding: 10px 0;
+	text-transform: initial;
 }
 .card-footer {
 	background-color: var(--main-bg-color);
